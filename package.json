@@ -1,0 +1,41 @@
+{
+  "name": "typescript-mtlgy-api",
+  "version": "1.0.0",
+  "description": "Typescript Node.js API",
+  "main": "index.js",
+  "scripts": {
+    "start": "yarn build && node dist/src/index.js",
+    "start:dev": "ts-node-dev 'src/index.ts'",
+    "build": "tsc",
+    "lint": "eslint ./src ./test --ext .ts",
+    "lint:fix": "eslint ./src ./test --ext .ts --fix",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vitorMendonca95/typescript-mtlgy-api.git"
+  },
+  "keywords": [
+    "nodejs.typescript.api"
+  ],
+  "author": "Vitor Mendonca",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vitorMendonca95/typescript-mtlgy-api/issues"
+  },
+  "homepage": "https://github.com/vitorMendonca95/typescript-mtlgy-api#readme",
+  "devDependencies": {
+    "@types/module-alias": "^2.0.1",
+    "@types/node": "^18.7.11",
+    "@typescript-eslint/eslint-plugin": "^5.34.0",
+    "@typescript-eslint/parser": "^5.34.0",
+    "eslint": "^8.22.0",
+    "eslint-config-google": "^0.14.0",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^4.7.4"
+  },
+  "dependencies": {
+    "autocompleter": "^6.1.3",
+    "module-alias": "^2.2.2"
+  }
+}
